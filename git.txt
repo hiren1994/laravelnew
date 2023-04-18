@@ -1,0 +1,30 @@
+ssh-keygen -t rsa
+cd .ssh
+cat id.rsa.pub
+
+apt-get install apache2
+
+system ctl enable 
+start service 
+
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+create the .ssh folder in /var/ww/html 
+
+and paste the deploy.sh file in .script folder 
+
+clone githut laravelnew repo 
+
+git clone http://laravelnew 
+
+cd laravel new 
+chmod +x .scripts/deploy.sh
+
+
+
+chnage last line in workflow script: "cd /var/www/html/laravelnew && git checkout -f && git pull"
+
+
+
+
+
